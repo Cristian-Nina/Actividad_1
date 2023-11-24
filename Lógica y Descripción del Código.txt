@@ -1,0 +1,47 @@
+Lógica y Descripción del Código
+
+Validación de Datos:
+
+1. Nombre y Apellido:
+   - Se utiliza un bucle `do-while` para solicitar y validar el nombre y el apellido.
+   - El programa solicita al usuario que ingrese el nombre y, si está en blanco, muestra un mensaje de error y solicita nuevamente el nombre.
+   - Lo mismo ocurre para el apellido.
+
+2. DNI (Documento Nacional de Identidad):
+   - Se utiliza otro bucle `do-while` para solicitar y validar el DNI.
+   - El programa utiliza una expresión regular (`\\d{8}`) para asegurarse de que el DNI ingresado sea un número válido de 8 dígitos.
+   - Mientras el DNI no sea válido, se solicita al usuario que lo ingrese nuevamente.
+
+3. Fecha de Nacimiento:
+   - Se utiliza un tercer bucle `do-while` para solicitar y validar la fecha de nacimiento en el formato correcto (dd/mm/yyyy).
+   - El programa utiliza una expresión regular (`\\d{2}/\\d{2}/\\d{4}`) para asegurarse de que la fecha ingresada sea válida.
+   - Si la fecha no es válida, se muestra un mensaje de error y se pide al usuario que ingrese la fecha nuevamente.
+
+
+Ingresar Datos de una Persona:
+
+1. Método `ingresarDatosPersona`:
+   - Se utiliza el objeto `Scanner` para solicitar al usuario que ingrese información (nombre, apellido, DNI y fecha de nacimiento).
+   - Se invocan funciones específicas para validar cada tipo de dato, asegurando que los datos ingresados sean correctos.
+   - Una vez que todos los datos son válidos, se almacenan en el array bidimensional `personas`.
+
+
+Listar Personas Registradas:
+
+1. Método `listarPersonas`:
+   - Itera sobre el array bidimensional `personas` e imprime los detalles de cada persona registrada.
+   - Solo se imprimen las personas que han sido registradas; es decir, aquellas cuyos datos no son nulos.
+
+
+Salida del Programa:
+
+1. Menú Principal y Salida:
+   - Se utiliza un bucle `do-while` para mostrar un menú al usuario y realizar operaciones hasta que elige salir (opción 3).
+   - Cuando el usuario elige salir, se imprime un mensaje de despedida y el programa termina.
+
+
+Cierre del Scanner:
+
+1. Cierre del Scanner:
+   - Al final del programa, se cierra el objeto `Scanner` para liberar recursos.
+

@@ -1,0 +1,12 @@
+Informe del Problema:
+
+Validación de Duplicados
+
+Problema:
+
+Durante el desarrollo, se identificó un problema potencial con la validación de duplicados al ingresar datos de personas. La aplicación actual no verifica si la persona ya está registrada antes de agregarla, lo que podría conducir a la inserción de registros duplicados.
+
+
+Solución:
+
+Se implementó una verificación adicional en el método `ingresarDatosPersona` para buscar duplicados basándose en el nombre y apellido. Si se encuentra una coincidencia, se informa al usuario y se evita la inserción del registro duplicado.
